@@ -1,25 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import Header from "./components/Header";
+import Slider from "./components/Slider";
+import Timeline from "./components/Timeline";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Slider cases={100} confirmed={10} dead={0} />
+      <div id="ss-container" className="ss-container">
+        {[1, 2, 3, 4, 5, 6, 7].map((i) => (
+          <Timeline key={i} />
+        ))}
+      </div>
+    </>
   );
 }
 
