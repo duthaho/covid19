@@ -4,9 +4,11 @@ function Patient({ name, address, note }) {
   return (
     <div className="container-border">
       <div className="gray-container">
-        <span className="content-title">{name}</span>
-        <p>Địa điểm: {address}</p>
-        <p>Ghi chú: {note}</p>
+        <div className="content-title">
+          <span className="patient-name">{name}</span>
+        </div>
+        <p>{address}</p>
+        <p>{note}</p>
       </div>
     </div>
   );

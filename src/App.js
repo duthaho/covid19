@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import Header from "./components/Header";
 import Slider from "./components/Slider";
-import Timeline from "./components/Timeline";
+import Section from "./components/Section";
 
 export const ThemeContext = React.createContext({
   theme: "light",
@@ -26,9 +26,7 @@ function App() {
       <Header />
       <Slider cases={100} confirmed={10} dead={0} />
       <div id="ss-container" className="ss-container">
-        {[1, 2, 3, 4, 5, 6, 7].map((i) => (
-          <Timeline key={i} />
-        ))}
+        <Section />
       </div>
     </ThemeContext.Provider>
   );

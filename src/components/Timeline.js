@@ -1,25 +1,25 @@
 import React from "react";
 
 import Dot from "./Dot";
-import Map from "./Map";
+import Country from "./Country";
 import Patient from "./Patient";
 
-function Timeline({ verifyDate, address, lat, lng, name, note }) {
+function Timeline({ patient, country, invert }) {
   return (
-    <div className="ss-row" id="imgstyle-2">
+    <div className="ss-row">
       <div className="ss-left">
-        <Dot date={verifyDate} />
+        {patient.showDate && <Dot date={patient.verifyDate} />}
 
         <div className="time-dot"></div>
         <div className="arrow-side"></div>
 
-        <Map lat={lat} lng={lng} />
+        {invert ? <Country {...country} /> : <Patient {...patient} />}
       </div>
 
       <div className="ss-right">
         <div className="arrow-side"></div>
 
-        <Patient address={address} name={name} note={note} />
+        {invert ? <Patient {...patient} /> : <Country {...country} />}
       </div>
     </div>
   );

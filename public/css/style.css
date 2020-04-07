@@ -272,6 +272,17 @@ h6 {
   display: block;
   font-weight: 600;
 }
+.content-title .patient-name {
+  display: inline-block;
+  color: #222;
+  background-color: #fafafa;
+  border: 1px solid #95a5a6;
+  padding: 2px 8px;
+  margin: 1px 2px;
+  border-radius: 7px;
+  white-space: nowrap;
+  cursor: default;
+}
 .blackbody .content-title {
   border-bottom: dashed 1px #3f3f3f;
 }

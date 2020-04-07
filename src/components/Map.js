@@ -12,7 +12,7 @@ function Map({ lat, lng }) {
           scrolling="no"
           marginHeight="0"
           marginWidth="0"
-          src={`http://maps.google.com/maps?z=20&t=m&q=loc:${lat}+${lng}&output=embed`}
+          src={`http://maps.google.com/maps?z=15&t=m&q=loc:${lat}+${lng}&output=embed`}
         ></iframe>
         <br />
       </div>

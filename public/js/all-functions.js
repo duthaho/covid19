@@ -421,46 +421,6 @@ $(function() {
 	$sidescroll.init();
 });
 
-//Flexslider settings
-//==================================================
-$(document).ready(function(){
-	$('#flexslider').flexslider({
-		animation: "fade",
-		controlNav: false,
-		start: function(slider){
-		$('body').removeClass('loading');
-		}
-	});
-		$('#flexslider1').flexslider({
-		animation: "fade",
-		controlNav: false,
-		start: function(slider){
-		$('body').removeClass('loading');
-		}
-	});
-	$('#flexslider-nav').flexslider({
-		animation: "fade",
-		controlNav: true,
-		start: function(slider){
-		$('body').removeClass('loading');
-		}
-	});
-});
-
-
-
-//Accordion settings
-//==================================================
-$(document).ready(function(){
-$('#example1, #example2').accordion({
-	speed: 400,
-	canToggle: true
-
-});
-
-$(".loading").removeClass("loading");
-});
-
 
 //Img roll over effect settings
 //==================================================
