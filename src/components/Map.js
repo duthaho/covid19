@@ -20,4 +20,4 @@ function Map({ lat, lng }) {
   );
 }
 
-export default Map;
+export default React.memo(Map);

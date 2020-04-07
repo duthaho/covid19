@@ -12,4 +12,4 @@ function Dot({ date }) {
   );
 }
 
-export default Dot;
+export default React.memo(Dot);

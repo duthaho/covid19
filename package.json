@@ -2,6 +2,14 @@
   "name": "covid19",
   "version": "0.1.0",
   "private": true,
+  "author": "duthaho",
+  "keywords": [
+    "coronavirus",
+    "covid19",
+    "ncovi",
+    "react",
+    "hooks"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",

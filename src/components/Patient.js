@@ -1,10 +1,10 @@
 import React from "react";
 
-function Patient({ num, address, note }) {
+function Patient({ name, address, note }) {
   return (
     <div className="container-border">
       <div className="gray-container">
-        <h3 className="content-title">Bệnh nhân: {num}</h3>
+        <span className="content-title">{name}</span>
         <p>Địa điểm: {address}</p>
         <p>Ghi chú: {note}</p>
       </div>
@@ -12,4 +12,4 @@ function Patient({ num, address, note }) {
   );
 }
 
-export default Patient;
+export default React.memo(Patient);
