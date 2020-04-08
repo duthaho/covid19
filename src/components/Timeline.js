@@ -4,22 +4,22 @@ import Dot from "./Dot";
 import Country from "./Country";
 import Patient from "./Patient";
 
-function Timeline({ patient, country, invert }) {
+function Timeline({ patient, country }) {
   return (
     <div className="ss-row">
       <div className="ss-left">
-        {patient.showDate && <Dot date={patient.verifyDate} />}
+        <Dot date={patient.verifyDate} />
 
         <div className="time-dot"></div>
         <div className="arrow-side"></div>
 
-        {invert ? <Country {...country} /> : <Patient {...patient} />}
+        <Patient {...patient} />
       </div>
 
       <div className="ss-right">
         <div className="arrow-side"></div>
 
-        {invert ? <Patient {...patient} /> : <Country {...country} />}
+        <Country {...country} />
       </div>
     </div>
   );

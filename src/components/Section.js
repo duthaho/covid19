@@ -12,9 +12,8 @@ function Section() {
     () =>
       covid19.map((c, index) => (
         <Timeline
-          patient={c}
-          invert={index % 2}
           key={index}
+          patient={c}
           country={country[index % countryLength]}
         />
       )),

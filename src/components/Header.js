@@ -11,7 +11,7 @@ function Header() {
         <div className="wrapper">
           <ul className="nav" id="ss-nav">
             <li>
-              <a href="#headslider">Trang chủ</a>
+              <a href="#headslider">Về đầu trang</a>
             </li>
           </ul>
         </div>
