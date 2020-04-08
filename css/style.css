@@ -78,15 +78,19 @@ h6 {
 }
 .logo {
   float: left;
-  height: 100px;
-  width: 96px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   cursor: pointer;
   position: relative;
   z-index: 10;
   margin-left: 12px;
-  margin-top: -28px;
+  margin-top: -4px;
   background: url(../images/logo.png) no-repeat left bottom;
+}
+
+.blackbody .logo {
+  background: url(../images/logo-black.png) no-repeat left bottom;
 }
 
 /*####################################################*/
